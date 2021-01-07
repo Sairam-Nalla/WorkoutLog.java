@@ -1,7 +1,9 @@
-// Programmer: 	Sairam Nalla
-// Purpose: 	This program allows the user to keep track of what exercises they perform, specifically: the number of reps, sets, and the amount of weight used. 
-//				The program allows formats the day the workouts get logged in order to be able to keep track of the user's progress overtime in the gym. All of 
-//				the data gets stored in a text file labaled WorkoutLog.txt 			
+/*
+	Programmer: 	Sairam Nalla
+	Purpose: 	This program allows the user to keep track of what exercises they perform, specifically: the number of reps, sets, and the amount of weight used. 
+			The program allows formats the day the workouts get logged in order to be able to keep track of the user's progress overtime in the gym. All of 
+			the data gets stored in a text file labaled WorkoutLog.txt 			
+*/
 package workouts.java;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
