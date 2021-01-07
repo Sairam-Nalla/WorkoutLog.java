@@ -1,7 +1,7 @@
 // Programmer: Sairam Nalla
-// Purpose: This program allows the user to keep track of what exercises they perform, specifically: the number of reps, sets, and the amount of weight used. 
-//			The program allows formats the day the workouts get logged in order to be able to keep track of the user's progress overtime in the gym. All of 
-//			the data gets stored in a text file labaled WorkoutLog.txt 			
+// Purpose: 	This program allows the user to keep track of what exercises they perform, specifically: the number of reps, sets, and the amount of weight used. 
+//		The program allows formats the day the workouts get logged in order to be able to keep track of the user's progress overtime in the gym. All of 
+//		the data gets stored in a text file labaled WorkoutLog.txt 			
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -731,7 +731,7 @@ public class WorkoutLog {
 	// stores the user input into an int variable called userInput that gets returned
 	public static int printMainMenu() {
 		Scanner scnr = new Scanner(System.in);
-		int userInput = 0;
+		int userInput = 1;
 		try {
 			// If an integer that is not within the range 1-6 is entered, the personal exception
 			// gets thrown to tell the user the data they entered is not valid and give them
@@ -784,9 +784,9 @@ public class WorkoutLog {
 				fw.write("--------------------------------");
 			}
 			// format for each workout log entry
-			pw.println("+----------------------+");
+			pw.println("+------------------------+");
 			pw.println("| " + dt.format(date) + "  |");
-			pw.println("+----------------------+");
+			pw.println("+------------------------+");
 			Exercises reference = null;
 			// For loop iterates through every object stored in the log ArrayList
 			for (int i = 0; i < log.size(); i++) {
